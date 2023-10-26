@@ -1,0 +1,56 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #f4f9ff;
+  color: #333;
+  font-size: 0.875rem;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* サイト全体のコンテンツ幅を設定 */
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+/* 中のコンテンツ部分の最大幅を設定 */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/*------------------------------------
+mainimg
+----------------------------------*/
+.mainvisual {
+  margin-bottom: 36px;
+}
+
+/*------------------------------------
+menu
+----------------------------------*/
+.menu {
+  display: flex;
+}
+.menu h1 {
+  width: 110px;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}/*# sourceMappingURL=style.css.map */
