@@ -46,11 +46,43 @@ menu
 ----------------------------------*/
 .menu {
   display: flex;
+  margin-bottom: 65px;
 }
 .menu h1 {
   width: 110px;
+  margin-right: 50px;
 }
 .menu ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+.menu ul li {
+  margin-right: 33px;
+}
+.menu ul li a {
+  color: #2D2D2D;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper div {
+  width: 50%;
+  margin-bottom: 60px;
+}
+
+.jueryabout {
+  padding: 0 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.jueryabout h2 {
+  margin-bottom: 16px;
+}
+.jueryabout p {
+  margin-bottom: 31px;
 }/*# sourceMappingURL=style.css.map */

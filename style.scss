@@ -40,11 +40,42 @@ html {
   ----------------------------------*/
   .menu {
     display: flex;
+    margin-bottom: 65px;
     h1 {
         width: 110px;
+        margin-right: 50px;
     }
     ul {
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        li {
+            margin-right: 33px;
+            a {
+                color: #2D2D2D;
+                text-decoration: none;    
+            }
+        }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    div {
+        width: 50%;
+        margin-bottom: 60px;
+    }
+  }
+  .jueryabout {
+    padding: 0 64px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    h2 {
+        margin-bottom: 16px;
+    }
+    p {
+        margin-bottom: 31px;
     }
   }
