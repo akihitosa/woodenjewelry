@@ -4,10 +4,9 @@ html {
 }
 
 body {
-  background-color: #f4f9ff;
   color: #333;
   font-size: 0.875rem;
-  font-family: "Inter", sans-serif;
+  font-family: "Crimson Text", serif;
 }
 
 img {
@@ -21,9 +20,11 @@ img {
 }
 
 /* 中のコンテンツ部分の最大幅を設定 */
-.wrapper {
+.wrapper,
+footer {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 18px;
 }
 
 img {
@@ -35,21 +36,22 @@ ul {
 }
 
 /*------------------------------------
-mainimg
-----------------------------------*/
+  mainimg
+  ----------------------------------*/
 .mainvisual {
-  margin-bottom: 36px;
+  margin-top: 60px;
+  margin-bottom: 14px;
 }
 
 /*------------------------------------
-menu
-----------------------------------*/
+  menu
+  ----------------------------------*/
 .menu {
   display: flex;
-  margin-bottom: 65px;
+  margin-bottom: 53px;
 }
 .menu h1 {
-  width: 110px;
+  width: 121px;
   margin-right: 50px;
 }
 .menu ul {
@@ -66,23 +68,97 @@ menu
 }
 
 .wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 17px;
 }
 .wrapper div {
-  width: 50%;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
+}
+.wrapper .jueryabout,
+.wrapper .handmeidabout {
+  padding: 162px 73px 0 67px;
+}
+.wrapper .jueryabout p,
+.wrapper .handmeidabout p {
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.wrapper .jueryabout h2,
+.wrapper .handmeidabout h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 20px;
+}
+.wrapper .handmeidabout {
+  padding: 161px 73px 0 63px;
 }
 
-.jueryabout {
-  padding: 0 64px;
+footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
 }
-.jueryabout h2 {
-  margin-bottom: 16px;
+footer h3 {
+  width: 121px;
 }
-.jueryabout p {
-  margin-bottom: 31px;
+footer p {
+  font-weight: normal;
+  margin-right: 19px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+  .mainvisual {
+    margin-top: initial;
+    height: 334px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 7px;
+    vertical-align: bottom;
+  }
+  .menu {
+    padding: 0 18px;
+    margin-bottom: 42px;
+  }
+  .menu h1 {
+    margin-right: 5px;
+    width: 110px;
+  }
+  .menu ul li {
+    margin-right: initial;
+    margin-left: 33px;
+    padding-top: 5px;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+    margin-bottom: 18px;
+  }
+  .wrapper div {
+    margin-bottom: 37px;
+  }
+  .wrapper .huery-img {
+    margin-bottom: 8px;
+  }
+  .wrapper .jueryabout,
+  .wrapper .handmeidabout {
+    padding: initial;
+  }
+  .wrapper .jueryabout h2,
+  .wrapper .handmeidabout h2 {
+    font-size: 1.25rem;
+    line-height: 0.85;
+  }
+  .wrapper .handmeid-img {
+    margin-bottom: 8px;
+  }
+  .wrapper .handmeidabout {
+    order: 1;
+  }
+  footer h3 {
+    width: 110px;
+  }
 }/*# sourceMappingURL=style.css.map */
